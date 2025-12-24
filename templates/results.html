@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Results - AI Resume Screener</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+  <div class="container">
+    
+    <h2>🔍 Top Matching Resumes</h2>
+
+    <p><strong>Current Job Description:</strong></p>
+    <pre class="jd-box">{{ jd }}</pre>
+
+    <!-- Change JD -->
+    <form action="/change_jd" method="POST">
+      <textarea name="new_job_description" rows="5" cols="70"
+        placeholder="Change job description here..."></textarea><br>
+      <button type="submit" class="btn">Re-run Matching</button>
+    </form>
+
+    <hr>
+
+    <!-- Results Table -->
+    <table class="results-table">
+      <tr>
+        <th>Rank</th>
+        <th>Resume</th>
+        <th>Match Score</th>
+      </tr>
+
+      {% for resume, score in results %}
+        <tr class="{% if loop.index == 1 %}top-match{% endif %}">
+          <td>{{ loop.index }}</td>
+          <td>
+            <strong>{{ resume }}</strong>
+          </td>
+          <td>{{ score | round(2) }}%</td>
+        </tr>
+      {% endfor %}
+    </table>
+
+    <br>
+    <a href="/" class="btn">Start Over</a>
+
+  </div>
+
+</body>
+</html>

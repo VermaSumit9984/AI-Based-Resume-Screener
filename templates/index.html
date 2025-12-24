@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Resume Screener</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Step 1: Enter Job Description</h2>
+    <form action="/upload_jd" method="POST">
+      <textarea name="job_description" rows="10" cols="80" placeholder="Paste or type the job description here..." required></textarea>
+      <br><br>
+      <button type="submit" class="btn">Next → Upload Resumes</button>
+    </form>
+  </div>
+</body>
+</html>

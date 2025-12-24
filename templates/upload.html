@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Resumes</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Step 2: Upload or Drag & Drop Resumes</h2>
+
+    <form id="uploadForm" action="/upload_resumes" method="POST" enctype="multipart/form-data">
+      <div id="dropArea" class="drop-zone">
+        <p>Drag & drop resumes here, or click to browse</p>
+        <input type="file" id="fileInput" name="resumes" multiple accept=".pdf,.doc,.docx">
+      </div>
+      <br>
+      <button type="submit" class="btn">Process Resumes</button>
+    </form>
+  </div>
+</body>
+</html>

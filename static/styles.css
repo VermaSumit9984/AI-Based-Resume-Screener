@@ -1,0 +1,100 @@
+/* ---------- BASIC PAGE STYLING ---------- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8fafc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* ---------- BUTTON ---------- */
+.btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* ---------- TEXTAREA ---------- */
+textarea {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+/* ---------- DROP ZONE ---------- */
+.drop-zone {
+  border: 2px dashed #007bff;
+  padding: 40px;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.drop-zone.dragover {
+  background: #eaf4ff;
+}
+
+/* ---------- JD BOX ---------- */
+.jd-box {
+  background: #f1f5f8;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d0d7de;
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+  white-space: pre-wrap;
+  font-family: "Consolas", "Monaco", monospace;
+}
+
+/* ---------- RESULTS TABLE ---------- */
+.results-table {
+  width: 90%;
+  margin: 25px auto;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+.results-table th {
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.results-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 15px;
+}
+
+.results-table tr:hover {
+  background: #f3f8ff;
+}
+
+/* ---------- HIGHLIGHT TOP MATCH ---------- */
+.top-match {
+  background: #e8ffe8 !important;
+  font-weight: bold;
+  color: #0d730d;
+}
