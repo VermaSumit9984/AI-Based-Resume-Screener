@@ -49,8 +49,7 @@ Results Display
 
 Ranked resumes are shown on the results page.
 
-**🛠️ Tech Stack**
-Backend
+**🛠️ Tech Stack Backend**
 
 Python 3.11+
 
@@ -81,6 +80,7 @@ HTML
 Jinja2 Templates
 
 **📁 Project Structure**
+
 ai-based-resume-screening/
 │
 ├── app.py                  # Main Flask application
@@ -151,5 +151,5 @@ LLM-based resume summarization
 
 **👨‍💻 Author**
 
-    SUmit Verma
+         Sumit Verma
 ML Developer / Python Developer
